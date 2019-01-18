@@ -1,0 +1,77 @@
+// VARIABLES
+
+@import './_styles.scss';
+
+html {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  font-family: 'Baloo Tamma', cursive, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  position: sticky;
+  top: 0;
+  height: 4rem;
+  width: 100%;
+  background-color: $lightWhite;
+  text-align: center;
+  align-content: center;
+}
+
+.nav-logo {
+  margin: auto;
+  font-size: 2rem;
+}
+
+.footer {
+  display: grid;
+  height: 12em;
+  width: 100%;
+  background-color: $lightWhite;
+  grid-template-areas:
+  "a b c d e f"
+}
+
+.mobile-nav {
+  display: grid;
+  position: sticky;
+  bottom: 0;
+  height:4em;
+  background-color: red;
+  grid-template-columns: repeat(6, 1fr);
+  column-gap: 2px;
+}
+
+@media (max-width: 580px) {
+  .navbar {
+    position: absolute;
+  }
+}
+
+@media (min-width: 580px) {
+  .mobile-nav {
+    display: none;
+  }
+}
+
+// STYLING
+//
+// .App-header {
+//   background-color: $red;
+//   height: 1vh;
+//   padding: 20px;
+//   color: white;
+//   margin: 0;
+//   font-size: 4rem;
+// }

@@ -1,0 +1,13 @@
+@import './_styles.scss';
+
+.featured-block {
+  background-color: $lightPurp;
+  height: 100vh;
+  display: flex;
+  align-content: center;
+}
+
+.title {
+  color: $lightWhite;
+  margin: auto;
+}
