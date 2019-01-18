@@ -1,6 +1,7 @@
 // VARIABLES
 
 @import './_styles.scss';
+@import './main.scss';
 
 html {
   margin: 0;
@@ -40,19 +41,53 @@ body {
   width: 100%;
   background-color: $lightWhite;
   grid-template-areas:
-  "a b c d e f"
+  ". a . b . c ."
 }
 
 .mobile-nav {
+  padding: 0 3em;
   display: grid;
   position: sticky;
   bottom: 0;
   height:4em;
-  background-color: red;
-  grid-template-columns: repeat(6, 1fr);
+  background-color: $lightWhite;
+  border-top: 1px solid lightgray;
+  grid-template-columns: repeat(5, 1fr);
   column-gap: 2px;
+  grid-template-areas:
+  "a v b z c"
 }
-
+.home-logo {
+  grid-area: a;
+  font-size: 2rem;
+  margin: auto;
+  opacity: .6;
+}
+.target-logo {
+  grid-area: b;
+  font-size: 2rem;
+  margin: auto;
+  opacity: .6;
+}
+.tool-logo {
+  grid-area: c;
+  font-size: 2rem;
+  margin: auto;
+  opacity: .6;
+}
+@mixin line($area) {
+  grid-area: $area;
+  width: 1px;
+  background-color: lightgray;
+  height: 100%;
+  margin: auto;
+}
+.v-line {
+  @include line(v)
+}
+.z-line {
+  @include line(z)
+}
 @media (max-width: 580px) {
   .navbar {
     position: absolute;
@@ -64,14 +99,3 @@ body {
     display: none;
   }
 }
-
-// STYLING
-//
-// .App-header {
-//   background-color: $red;
-//   height: 1vh;
-//   padding: 20px;
-//   color: white;
-//   margin: 0;
-//   font-size: 4rem;
-// }

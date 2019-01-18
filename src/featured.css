@@ -1,19 +1,30 @@
 h1 {
   font-size: 15vw; }
 
+h2 {
+  font-size: 12vw; }
+
+button:focus {
+  outline: 0; }
+
 @media (min-width: 580px) {
   h1 {
-    font-size: 10vw; } }
+    font-size: 10vw; }
+  h2 {
+    font-size: 8vw; } }
 
 @media (min-width: 1200px) {
   h1 {
-    font-size: 10rem; } }
+    font-size: 10rem; }
+  h2 {
+    font-size: 8rem; } }
 
 .featured-block {
   background-color: #B768FF;
   height: 100vh;
   display: flex;
-  align-content: center; }
+  align-content: center;
+  text-align: center; }
 
 .title {
   color: #f3f3f3;

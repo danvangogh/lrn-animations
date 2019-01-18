@@ -1,0 +1,55 @@
+h1 {
+  font-size: 15vw; }
+
+h2 {
+  font-size: 12vw; }
+
+button:focus {
+  outline: 0; }
+
+@media (min-width: 580px) {
+  h1 {
+    font-size: 10vw; }
+  h2 {
+    font-size: 8vw; } }
+
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 10rem; }
+  h2 {
+    font-size: 8rem; } }
+
+.hero {
+  display: grid;
+  height: 100vh;
+  width: 100%;
+  background-color: #fafafa;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: .5fr 1.5fr .5fr 1fr;
+  grid-template-areas: ". . . . a a a a . . . ." ". . b b b b b b b b . ." ". . . c c c c c c . . ." ". . . . d d d d . . . ."; }
+
+.hero h2 {
+  color: #3FCC71; }
+
+.hero-title {
+  color: #3FCC71;
+  grid-area: b;
+  text-align: center; }
+
+.roll-button {
+  grid-area: c;
+  text-align: center;
+  margin: auto;
+  padding: 1em 2em;
+  background-color: #3FCC71;
+  line-height: 1.5rem;
+  border-radius: 2em;
+  color: #f3f3f3;
+  border: none;
+  font-family: inherit;
+  font-size: 1.5rem; }
+
+@media (min-width: 580px) {
+  .roll-button {
+    margin: auto;
+    padding: 1em 2.5em; } }

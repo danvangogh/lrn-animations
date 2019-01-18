@@ -1,0 +1,46 @@
+@import './_styles.scss';
+
+.hero {
+  display: grid;
+  height: 100vh;
+  width: 100%;
+  background-color: #fafafa;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: .5fr 1.5fr .5fr 1fr;
+  grid-template-areas:
+  ". . . . a a a a . . . ."
+  ". . b b b b b b b b . ."
+  ". . . c c c c c c . . ."
+  ". . . . d d d d . . . ."
+}
+
+.hero h2 {
+  color: #3FCC71;
+}
+
+.hero-title {
+  color: #3FCC71;
+  grid-area: b;
+  text-align: center;
+}
+
+.roll-button {
+  grid-area: c;
+  text-align: center;
+  margin: auto;
+  padding: 1em 2em;
+  background-color: $lightGreen;
+  line-height: 1.5rem;
+  border-radius: 2em;
+  color: $lightWhite;
+  border: none;
+  font-family: inherit;
+  font-size: 1.5rem;
+}
+
+@media (min-width: 580px) {
+  .roll-button {
+    margin: auto;
+    padding: 1em 2.5em;
+  }
+}

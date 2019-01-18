@@ -4,7 +4,7 @@ class Featured extends Component {
   render() {
     return(
       <div className="featured-block">
-        <h1 className="title">It's an app.</h1>
+        <h1 className="title">Mobile Solutions for a progressive world.</h1>
       </div>
     )
   }
